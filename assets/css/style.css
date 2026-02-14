@@ -108,11 +108,11 @@ a {
 }
 
 .logo-sub {
-    font-size: 0.65rem;
-    letter-spacing: 6px;
-    color: var(--gray);
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    color: var(--gold-light);
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .nav-menu {
@@ -285,32 +285,88 @@ a {
     text-shadow: 0 0 80px rgba(212, 175, 55, 0.3);
 }
 
-.hero-subtitle {
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    letter-spacing: 12px;
+.hero-subtitle-gs {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    letter-spacing: 10px;
     text-transform: uppercase;
-    color: var(--gray);
-    font-weight: 300;
-    margin-bottom: 4px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
     animation: fadeInUp 1s ease-out 0.4s both;
 }
 
-.hero-tagline {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    color: var(--gold-light);
-    letter-spacing: 4px;
+.hero-empresa {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    font-weight: 300;
     margin-bottom: 24px;
     animation: fadeInUp 1s ease-out 0.5s both;
 }
 
 .hero-desc {
-    max-width: 560px;
+    max-width: 600px;
     margin: 0 auto 40px;
     font-size: 1rem;
     color: var(--gray);
     line-height: 1.8;
     animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* Hero Delivery Cards */
+.hero-delivery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto 48px;
+    animation: fadeInUp 1s ease-out 0.7s both;
+}
+
+.hero-delivery-card {
+    padding: 28px 24px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 12px;
+    background: rgba(212, 175, 55, 0.04);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.hero-delivery-card:hover {
+    border-color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    transform: translateY(-4px);
+}
+
+.delivery-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 16px;
+    color: var(--gold);
+}
+
+.delivery-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.delivery-title {
+    font-family: var(--font-heading);
+    font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+    color: var(--gold);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.delivery-sub {
+    font-size: 0.85rem;
+    color: var(--gray-light);
+    font-weight: 300;
 }
 
 .hero-buttons {
@@ -319,7 +375,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 60px;
-    animation: fadeInUp 1s ease-out 0.8s both;
+    animation: fadeInUp 1s ease-out 0.9s both;
 }
 
 /* Buttons */
@@ -1442,6 +1498,11 @@ a {
 
     .gallery-item {
         height: 220px;
+    }
+
+    .hero-delivery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .hero-stats {
