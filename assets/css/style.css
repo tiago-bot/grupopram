@@ -1008,7 +1008,7 @@ a {
 
 .refinery-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     font-size: 1rem;
     color: var(--gray-light);
@@ -1020,6 +1020,23 @@ a {
     height: 8px;
     background: var(--gold);
     border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+
+.partner-name {
+    display: block;
+    font-size: 1rem;
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+.partner-location {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 400;
+    margin-top: 2px;
 }
 
 /* Products */
